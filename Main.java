@@ -8,7 +8,7 @@ import java.awt.event.ActionEvent;
 public class Main {
     public static void main(String[] args) {
         try {
-            GUI gui = new GUI();
+            GUI gui = GUI.getInstance();
             gui.useDefaultStartButton();
 
             // ONLY USE useDefaultButtonBehavior IN TEST
@@ -22,6 +22,9 @@ public class Main {
 
                     gui.setInstructionText("Never gonna give you up");
                     gui.updateInstructionText();
+
+                    gui.setResultText("Rick!");
+                    gui.updateResultText();
 
                     gui.setScore("420");
                     gui.setAccuracy("69");
@@ -40,6 +43,9 @@ public class Main {
 
                     gui.setInstructionText("Never gonna give you up");
                     gui.updateInstructionText();
+
+                    gui.setResultText("Rick!");
+                    gui.updateResultText();
 
                     gui.setScore("420");
                     gui.setAccuracy("69");
